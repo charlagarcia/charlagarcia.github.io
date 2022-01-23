@@ -6,7 +6,7 @@ function init() {
   d3.json("samples.json").then((data) => {
     var sampleNames = data.names;
 
-    sampleNames.forEach((sample) => {
+    var sampleNames.forEach((sample) => {
       selector
         .append("option")
         .text(sample)
